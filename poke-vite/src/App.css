@@ -1,0 +1,119 @@
+.App {
+  font-family: sans-serif;
+  text-align: center;
+  padding: 20px;
+  background-color: #f0f0f0; /* Fondo */
+}
+
+h1{
+  color: #f85d04; /* Rojo Pokédex */
+}
+
+.pokemon-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px;
+}
+
+.pokemon-card {
+  background-color: #ffffff; /* Fondo de la tarjeta */
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 15px;
+  width: 150px;
+  text-align: center;
+  transition: transform 0.2s;
+}
+
+.pokemon-card:hover {
+  transform: translateY(-5px);
+}
+
+.pokemon-id {
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 5px;
+}
+
+.pokemon-image {
+  width: 96px;
+  height: 96px;
+}
+
+.pokemon-name {
+  font-size: 1.1em;
+  color: #d63333; /* Rojo Pokédex */
+  margin-top: 10px;
+}
+
+/* Estilos para el contenedor del buscador (centrado y con sombra) */
+.search-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 30px auto;
+    width: 90%;
+    max-width: 500px;
+    padding: 10px 15px;
+    border-radius: 50px; /* Borde redondeado */
+    background-color: #fff;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1); /* Sombra elegante */
+    border: 2px solid #ef5350; /* Borde rojo Pokémon */
+}
+
+/* Estilos para el campo de entrada de texto */
+.search-input {
+    flex-grow: 1; /* Permite que ocupe el espacio disponible */
+    border: none;
+    padding: 10px;
+    font-size: 1.1em;
+    outline: none; /* Quitar el borde de enfoque por defecto */
+    background: transparent;
+    color: #333;
+}
+
+/* Estilos para el placeholder */
+.search-input::placeholder {
+    color: #aaa;
+    font-style: italic;
+}
+
+/* Estilos para el icono de búsqueda */
+.search-icon {
+    font-size: 1.4em;
+    color: #ef5350; /* Color rojo Pokémon para el ícono */
+    margin-left: 10px;
+    /* Si usas un ícono real (como de Font Awesome), se verá mejor */
+}
+
+/* Estilo para la paginación para que se integre bien */
+.pagination {
+    margin: 20px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+
+.pagination button {
+    background-color: #ef5350; /* Fondo del botón */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.2s;
+}
+
+.pagination button:hover:not(:disabled) {
+    background-color: #d63333;
+}
+
+.pagination button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
